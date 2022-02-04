@@ -1,0 +1,21 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: new-hospital
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    format-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/threads_db
+    username: postgres
+    password: 123@admin
+    initialization-mode: always
+    platform: postgres
